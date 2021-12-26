@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>program.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #cc7832;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+program.py</font>
+</center></td></tr></table>
+<pre>
+
+<span class="s1">import </span><span class="s0">songs</span>
+<span class="s1">import </span><span class="s0">serializers</span>
+<span class="s1">import </span><span class="s0">yaml_serializer</span>
+
+<span class="s0">song = songs.Song(</span><span class="s2">'1'</span><span class="s1">, </span><span class="s2">'Water of Love'</span><span class="s1">, </span><span class="s2">'Dire Straits'</span><span class="s0">)</span>
+
+<span class="s0">action = serializers.ObjectSerializer()</span>
+
+<span class="s0">print(action.serialize(song</span><span class="s1">, </span><span class="s2">'JSON'</span><span class="s0">))</span>
+<span class="s0">print(action.serialize(song</span><span class="s1">, </span><span class="s2">'XML'</span><span class="s0">))</span>
+<span class="s0">print(action.serialize(song</span><span class="s1">, </span><span class="s2">'YAML'</span><span class="s0">))</span>
+
+
+
+
+</pre>
+</body>
+</html>
